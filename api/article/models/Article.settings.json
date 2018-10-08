@@ -37,6 +37,19 @@
       "collection": "tag",
       "via": "articles",
       "dominant": true
+    },
+    "contents": {
+      "default": "",
+      "type": "json",
+      "required": true
+    },
+    "issue": {
+      "model": "issue",
+      "via": "articles"
+    },
+    "author": {
+      "model": "author",
+      "via": "articles"
     }
   }
 }

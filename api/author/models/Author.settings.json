@@ -1,19 +1,15 @@
 {
   "connection": "default",
-  "collectionName": "issue",
+  "collectionName": "",
   "info": {
-    "name": "issue",
+    "name": "author",
     "description": ""
   },
   "options": {
     "timestamps": true
   },
   "attributes": {
-    "title": {
-      "default": "",
-      "type": "string"
-    },
-    "sub_title": {
+    "name_and_family": {
       "default": "",
       "type": "string"
     },
@@ -21,16 +17,15 @@
       "model": "file",
       "via": "related",
       "plugin": "upload",
-      "required": false
-    },
-    "is_special": {
-      "default": false,
-      "type": "boolean",
       "required": true
     },
-    "articles": {
-      "collection": "article",
-      "via": "issue"
+    "description": {
+      "default": "",
+      "type": "text"
+    },
+    "url": {
+      "default": "",
+      "type": "string"
     }
   }
 }

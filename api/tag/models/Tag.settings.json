@@ -17,6 +17,10 @@
     "description": {
       "default": "",
       "type": "text"
+    },
+    "articles": {
+      "collection": "article",
+      "via": "tags"
     }
   }
 }
